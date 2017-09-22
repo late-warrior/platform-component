@@ -36,7 +36,7 @@ const ReplaceLayout = ({columns}) => (
 );
 
 const NewComp = withPlatform({PhantomJS: ReplaceComponent})(OrigComponent);
-const NewLayout = withPlatform({PhantomJS: ReplaceLayout, Firefox: ReplaceLayout})(BasicLayout);
+const NewLayout = withPlatform({PhantomJS: ReplaceLayout})(BasicLayout);
 
 export function constructComponent(id) {
     ReactDOM.render(<NewComp color="red"/>, document.getElementById(id));
