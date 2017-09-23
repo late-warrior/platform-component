@@ -3,7 +3,7 @@ module.exports = {
     entry: './index.js',
     output: {
         libraryTarget: 'this',
-        library: 'djsTidy',
+        library: 'tidy',
         filename: 'bundle.js',
         path: path.resolve('./dist')
     },

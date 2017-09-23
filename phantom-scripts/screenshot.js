@@ -1,7 +1,7 @@
 var page = require('webpage').create();
+var url = 'http://localhost:8080';
 
-
-page.open('http://shakti02.hyd.deshaw.com:8000', function() {
+page.open(url, function() {
   page.render('ph.png');
   phantom.exit();
 });
